@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #3c1e3e;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "header header"
+                        "aside main"
+                        "footer footer";
+}
+
+header{
+    grid-area: header;
+    
+}  
+
+header svg{
+    height: 20vh;
+    width: 100vw;
+}
+
+main{
+    grid-area: main;
+    
+}
+
+aside{
+    display: block;
+    grid-area: aside;
+    
+}
+
+footer{
+    grid-area: footer;
+    
+}
+
